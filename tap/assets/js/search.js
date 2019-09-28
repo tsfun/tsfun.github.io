@@ -1,0 +1,3 @@
+var typedoc = typedoc || {};
+            typedoc.search = typedoc.search || {};
+            typedoc.search.data = {"kinds":{"64":"Function","256":"Interface"},"rows":[{"id":0,"kind":256,"name":"SideEffect","url":"interfaces/sideeffect.html","classes":"tsd-kind-interface tsd-has-type-parameter"},{"id":1,"kind":256,"name":"Tapper","url":"interfaces/tapper.html","classes":"tsd-kind-interface tsd-has-type-parameter"},{"id":2,"kind":64,"name":"tap","url":"globals.html#tap","classes":"tsd-kind-function tsd-has-type-parameter"},{"id":3,"kind":64,"name":"tapper","url":"globals.html#tapper","classes":"tsd-kind-function tsd-has-type-parameter"}]};
