@@ -106,10 +106,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="addproperty" class="tsd-anchor"></a>
 					<h3>Add<wbr>Property</h3>
-					<div class="tsd-signature tsd-kind-icon">Add<wbr>Property&lt;Proto, Key, Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">{ [SoleKey in Key]: Pick&lt;Pick&lt;NullObject&lt;Proto&gt;, SetDifference&lt;keyof NullObject&lt;Proto&gt;, keyof NullObject&lt;{ [_ in SoleKey]: Value; }&gt;&gt;&gt; &amp; Pick&lt;NullObject&lt;{ [_ in SoleKey]: Value; }&gt;, Extract&lt;...&gt; &amp; Extract&lt;...&gt;&gt; &amp; Pick&lt;...&gt;, SetDifference&lt;...&gt; | ... 1 more ... | SetDifference&lt;...&gt;&gt;; }[Key]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Add<wbr>Property&lt;Proto, Key, Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object[Key]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/types.ts#L29">utils/types.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/types.ts#L29">utils/types.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,10 +133,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="maybeparam" class="tsd-anchor"></a>
 					<h3>Maybe<wbr>Param</h3>
-					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Param&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MaybeParam&lt;Fn&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Param&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Fn extends function ? Parameters&lt;Fn&gt; : never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/types.ts#L42">utils/types.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/types.ts#L42">utils/types.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,10 +154,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="maybereturn" class="tsd-anchor"></a>
 					<h3>Maybe<wbr>Return</h3>
-					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Return&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MaybeReturn&lt;Fn&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Return&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Fn extends function ? ReturnType&lt;Fn&gt; : never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/types.ts#L47">utils/types.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/types.ts#L47">utils/types.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">Object<wbr>Extends&lt;Proto, Properties&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Assign</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NullObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Proto</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">NullObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Properties</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/types.ts#L18">utils/types.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/types.ts#L18">utils/types.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">Single<wbr>Dict&lt;Key, Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/types.ts#L11">utils/types.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/types.ts#L11">utils/types.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +238,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/add-property.ts#L11">add-property.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/add-property.ts#L11">add-property.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -294,7 +294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L36">call-method.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L36">call-method.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,7 +356,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/utils/bind.ts#L2">utils/bind.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/utils/bind.ts#L2">utils/bind.ts:2</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -388,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L53">call-method.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L53">call-method.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -450,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L69">call-method.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L69">call-method.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -504,7 +504,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/get-property.ts#L19">get-property.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/get-property.ts#L19">get-property.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -555,7 +555,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L10">call-method.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L10">call-method.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L22">call-method.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L22">call-method.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -631,7 +631,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/call-method.ts#L83">call-method.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/call-method.ts#L83">call-method.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/object-extends.ts#L10">object-extends.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/object-extends.ts#L10">object-extends.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,7 +718,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/get-property.ts#L38">get-property.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/get-property.ts#L38">get-property.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +758,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/7c047ac/packages/object/get-property.ts#L8">get-property.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/28c0461/packages/object/get-property.ts#L8">get-property.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
