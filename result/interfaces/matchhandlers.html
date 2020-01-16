@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PropertyGetter | @tsfun/object — Reference</title>
+	<title>MatchHandlers | @tsfun/result — Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@tsfun/object — Reference</a>
+					<a href="../index.html" class="title">@tsfun/result — Reference</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="propertygetter.html">PropertyGetter</a>
+					<a href="matchhandlers.html">MatchHandlers</a>
 				</li>
 			</ul>
-			<h1>Interface PropertyGetter&lt;Object&gt;</h1>
+			<h1>Interface MatchHandlers&lt;Payload, Error, OkReturn, ErrReturn&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,16 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>Object</h4>
+						<h4>Payload</h4>
+					</li>
+					<li>
+						<h4>Error</h4>
+					</li>
+					<li>
+						<h4>OkReturn</h4>
+					</li>
+					<li>
+						<h4>ErrReturn</h4>
 					</li>
 				</ul>
 			</section>
@@ -76,46 +85,114 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PropertyGetter</span>
+						<span class="target">MatchHandlers</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-					<li class="tsd-signature tsd-kind-icon">__call&lt;Key&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/object/get-property.ts#L24">get-property.ts:24</a></li>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="matchhandlers.html#err" class="tsd-kind-icon">err</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="matchhandlers.html#ok" class="tsd-kind-icon">ok</a></li>
 							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Access a property</p>
-							</div>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="err" class="tsd-anchor"></a>
+					<h3>err</h3>
+					<div class="tsd-signature tsd-kind-icon">err<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ErrReturn</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/result/match.ts#L16">match.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function to handle when the result carries an error</p>
 						</div>
-						<h4 class="tsd-type-parameters-title">Type parameters</h4>
-						<ul class="tsd-type-parameters">
-							<li>
-								<h4>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Object</span></h4>
-							</li>
-						</ul>
-						<h4 class="tsd-parameters-title">Parameters</h4>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Carried error</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>Response for <code>Err</code> case</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li>
-								<h5>key: <span class="tsd-signature-type">Key</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Property key</p>
-								</div>
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrReturn</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>error: <span class="tsd-signature-type">Error</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ErrReturn</span></h4>
+									</li>
+								</ul>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span></h4>
-						<p>Property value</p>
-					</li>
-				</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="ok" class="tsd-anchor"></a>
+					<h3>ok</h3>
+					<div class="tsd-signature tsd-kind-icon">ok<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Payload</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">OkReturn</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/result/match.ts#L9">match.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Function to handle when the result carries a payload</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Carried payload</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>Response for <code>Ok</code> case</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Payload</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OkReturn</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>payload: <span class="tsd-signature-type">Payload</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OkReturn</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -131,93 +208,107 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-						<a href="propertygetter.html" class="tsd-kind-icon">Property<wbr>Getter</a>
+						<a href="matchhandlers.html" class="tsd-kind-icon">Match<wbr>Handlers</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="matchhandlers.html#err" class="tsd-kind-icon">err</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="matchhandlers.html#ok" class="tsd-kind-icon">ok</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#addproperty" class="tsd-kind-icon">Add<wbr>Property</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-external">
-						<a href="../globals.html#key" class="tsd-kind-icon">Key</a>
+						<a href="../globals.html#asyncdeeperrorresult" class="tsd-kind-icon">Async<wbr>Deep<wbr>Error<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#maybeparam" class="tsd-kind-icon">Maybe<wbr>Param</a>
+						<a href="../globals.html#asyncdeeppayloadresult" class="tsd-kind-icon">Async<wbr>Deep<wbr>Payload<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#maybereturn" class="tsd-kind-icon">Maybe<wbr>Return</a>
+						<a href="../globals.html#asyncresult" class="tsd-kind-icon">Async<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#nullobject" class="tsd-kind-icon">Null<wbr>Object</a>
+						<a href="../globals.html#deeperrorresult" class="tsd-kind-icon">Deep<wbr>Error<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#objectextends" class="tsd-kind-icon">Object<wbr>Extends</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#properties" class="tsd-kind-icon">Properties</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#simpledeepmerge" class="tsd-kind-icon">Simple<wbr>Deep<wbr>Merge</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#singledict" class="tsd-kind-icon">Single<wbr>Dict</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external">
-						<a href="../globals.html#protobind" class="tsd-kind-icon">proto<wbr>Bind</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../globals.html#dmwoc_def_err_hdlr" class="tsd-kind-icon">DMWOC_<wbr>DEF_<wbr>ERR_<wbr>HDLR</a>
+						<a href="../globals.html#deeppayloadresult" class="tsd-kind-icon">Deep<wbr>Payload<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#addproperty" class="tsd-kind-icon">add<wbr>Property</a>
+						<a href="../globals.html#and" class="tsd-kind-icon">and</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#applymethod" class="tsd-kind-icon">apply<wbr>Method</a>
+						<a href="../globals.html#andthen" class="tsd-kind-icon">and<wbr>Then</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#bindcontext" class="tsd-kind-icon">bind<wbr>Context</a>
+						<a href="../globals.html#asyncflatten" class="tsd-kind-icon">async<wbr>Flatten</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#callmethod" class="tsd-kind-icon">call<wbr>Method</a>
+						<a href="../globals.html#asyncflattenerror" class="tsd-kind-icon">async<wbr>Flatten<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#deepmergeoverwrite" class="tsd-kind-icon">deep<wbr>Merge<wbr>Overwrite</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../globals.html#deletepropertypath" class="tsd-kind-icon">delete<wbr>Property<wbr>Path</a>
+						<a href="../globals.html#asyncunwrap" class="tsd-kind-icon">async<wbr>Unwrap</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#getmethod" class="tsd-kind-icon">get<wbr>Method</a>
+						<a href="../globals.html#asyncunwrapor" class="tsd-kind-icon">async<wbr>Unwrap<wbr>Or</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#getproperty" class="tsd-kind-icon">get<wbr>Property</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../globals.html#getpropertypath" class="tsd-kind-icon">get<wbr>Property<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
+						<a href="../globals.html#asyncunwraporelse" class="tsd-kind-icon">async<wbr>Unwrap<wbr>OrElse</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#methodapplierof" class="tsd-kind-icon">method<wbr>Applier<wbr>Of</a>
+						<a href="../globals.html#clone" class="tsd-kind-icon">clone</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#methodcallerof" class="tsd-kind-icon">method<wbr>Caller<wbr>Of</a>
+						<a href="../globals.html#expectsome" class="tsd-kind-icon">expect<wbr>Some</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#methodgetter" class="tsd-kind-icon">method<wbr>Getter</a>
+						<a href="../globals.html#expectsomeor" class="tsd-kind-icon">expect<wbr>Some<wbr>Or</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#objectextends" class="tsd-kind-icon">object<wbr>Extends</a>
+						<a href="../globals.html#expectsomeorelse" class="tsd-kind-icon">expect<wbr>Some<wbr>OrElse</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#propertygetter" class="tsd-kind-icon">property<wbr>Getter</a>
+						<a href="../globals.html#flatten" class="tsd-kind-icon">flatten</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="../globals.html#propertyof" class="tsd-kind-icon">property<wbr>Of</a>
+						<a href="../globals.html#flattenerror" class="tsd-kind-icon">flatten<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../globals.html#setpropertypath" class="tsd-kind-icon">set<wbr>Property<wbr>Path</a>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#flip" class="tsd-kind-icon">flip</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#map" class="tsd-kind-icon">map</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#maperr" class="tsd-kind-icon">map<wbr>Err</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#maporelse" class="tsd-kind-icon">map<wbr>OrElse</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#match" class="tsd-kind-icon">match</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#or" class="tsd-kind-icon">or</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#orelse" class="tsd-kind-icon">or<wbr>Else</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#transpose" class="tsd-kind-icon">transpose</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#tryexec" class="tsd-kind-icon">try<wbr>Exec</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#unwrap" class="tsd-kind-icon">unwrap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#unwrapor" class="tsd-kind-icon">unwrap<wbr>Or</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="../globals.html#unwraporelse" class="tsd-kind-icon">unwrap<wbr>OrElse</a>
 					</li>
 				</ul>
 			</nav>

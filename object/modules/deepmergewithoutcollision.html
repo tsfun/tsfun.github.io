@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tapper | @tsfun/option — Reference</title>
+	<title>deepMergeWithoutCollision | @tsfun/object — Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@tsfun/option — Reference</a>
+					<a href="../index.html" class="title">@tsfun/object — Reference</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,68 +54,107 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="tapper.html">Tapper</a>
+					<a href="deepmergewithoutcollision.html">deepMergeWithoutCollision</a>
 				</li>
 			</ul>
-			<h1>Interface Tapper&lt;Value&gt;</h1>
+			<h1>Module deepMergeWithoutCollision</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>Value</h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Tapper</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-					<li class="tsd-signature tsd-kind-icon">__call&lt;Sub&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sub</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sub</span></li>
+				<ul class="tsd-signatures tsd-kind-module tsd-has-type-parameter tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">deep<wbr>Merge<wbr>Without<wbr>Collision&lt;A, B&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">B</span>, onerror<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deepmergewithoutcollision.errorprocessor.html" class="tsd-signature-type">ErrorProcessor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#simpledeepmerge" class="tsd-signature-type">SimpleDeepMerge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/tap/index.ts#L35">tap/index.ts:35</a></li>
+								<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/object/deep-merge.ts#L51">deep-merge.ts:51</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Executes all side-effects and return <code>value</code></p>
+								<p>Merge two objects</p>
 							</div>
+							<p>The two objects are expected to not have overlapping non-object properties</p>
 						</div>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
 						<ul class="tsd-type-parameters">
 							<li>
-								<h4>Sub<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span></h4>
+								<h4>A<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
+							</li>
+							<li>
+								<h4>B<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
 							</li>
 						</ul>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>value: <span class="tsd-signature-type">Sub</span></h5>
+								<h5>a: <span class="tsd-signature-type">A</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>Value from pipeline</p>
+									<p>Object to merge</p>
+								</div>
+							</li>
+							<li>
+								<h5>b: <span class="tsd-signature-type">B</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Object to merge</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> onerror: <a href="../interfaces/deepmergewithoutcollision.errorprocessor.html" class="tsd-signature-type">ErrorProcessor</a><span class="tsd-signature-symbol"> = DMWOC_DEF_ERR_HDLR</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Function to handle should error occurs</p>
 								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Sub</span></h4>
-						<p><code>value</code></p>
+						<h4 class="tsd-returns-title">Returns <a href="../globals.html#simpledeepmerge" class="tsd-signature-type">SimpleDeepMerge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>A merged object of <code>a</code> and <code>b</code></p>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-module tsd-is-external"><a href="../enums/deepmergewithoutcollision.errortype.html" class="tsd-kind-icon">Error<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-external"><a href="../interfaces/deepmergewithoutcollision.errorprocessor.html" class="tsd-kind-icon">Error<wbr>Processor</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-external"><a href="../interfaces/deepmergewithoutcollision.propertycollision.html" class="tsd-kind-icon">Property<wbr>Collision</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-external"><a href="deepmergewithoutcollision.html#errorprocessorparam" class="tsd-kind-icon">Error<wbr>Processor<wbr>Param</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-external">
+					<a name="errorprocessorparam" class="tsd-anchor"></a>
+					<h3>Error<wbr>Processor<wbr>Param</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<wbr>Processor<wbr>Param<span class="tsd-signature-symbol">:</span> <a href="../interfaces/deepmergewithoutcollision.propertycollision.html" class="tsd-signature-type">PropertyCollision</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/object/deep-merge.ts#L89">deep-merge.ts:89</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -124,17 +163,28 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class="current tsd-kind-module tsd-has-type-parameter tsd-is-external">
+						<a href="deepmergewithoutcollision.html">deep<wbr>Merge<wbr>Without<wbr>Collision</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-						<a href="tapper.html" class="tsd-kind-icon">Tapper</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-external">
+						<a href="../enums/deepmergewithoutcollision.errortype.html" class="tsd-kind-icon">Error<wbr>Type</a>
 					</li>
-				</ul>
-				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/deepmergewithoutcollision.errorprocessor.html" class="tsd-kind-icon">Error<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/deepmergewithoutcollision.propertycollision.html" class="tsd-kind-icon">Property<wbr>Collision</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-external">
+						<a href="deepmergewithoutcollision.html#errorprocessorparam" class="tsd-kind-icon">Error<wbr>Processor<wbr>Param</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

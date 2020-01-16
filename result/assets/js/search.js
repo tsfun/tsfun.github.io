@@ -1,3 +1,3 @@
 var typedoc = typedoc || {};
             typedoc.search = typedoc.search || {};
-            typedoc.search.data = {"kinds":{"65536":"Type literal"},"rows":[{"id":0,"kind":65536,"name":"__type","url":"globals.html#some.__type","classes":"tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter tsd-is-not-exported","parent":"some"},{"id":1,"kind":65536,"name":"__type","url":"globals.html#ok.__type","classes":"tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter tsd-is-not-exported","parent":"ok"}]};
+            typedoc.search.data = {"kinds":{"65536":"Type literal"},"rows":[{"id":0,"kind":65536,"name":"__type","url":"interfaces/matchhandlers.html#ok.__type-1","classes":"tsd-kind-type-literal tsd-parent-kind-property","parent":"MatchHandlers.ok"},{"id":1,"kind":65536,"name":"__type","url":"interfaces/matchhandlers.html#err.__type","classes":"tsd-kind-type-literal tsd-parent-kind-property","parent":"MatchHandlers.err"}]};

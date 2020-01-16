@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @tsfun/pipe — Reference</h1>
+			<h1>@tsfun/pipe — Reference</h1>
 		</div>
 	</div>
 </header>
@@ -65,11 +65,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external">
-							<h3>Interfaces</h3>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-has-type-parameter tsd-is-external"><a href="interfaces/sideeffect.html" class="tsd-kind-icon">Side<wbr>Effect</a></li>
-								<li class="tsd-kind-interface tsd-has-type-parameter tsd-is-external"><a href="interfaces/tapper.html" class="tsd-kind-icon">Tapper</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/pipenode.html" class="tsd-kind-icon">Pipe<wbr>Node</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -77,8 +76,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#pass" class="tsd-kind-icon">pass</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#pipe" class="tsd-kind-icon">pipe</a></li>
-								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#tap" class="tsd-kind-icon">tap</a></li>
-								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#tapper" class="tsd-kind-icon">tapper</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,13 +87,13 @@
 					<a name="pass" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> pass</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">pass&lt;X&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PipeNode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pass&lt;X&gt;<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/pipenode.html" class="tsd-signature-type">PipeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/pipe/index.ts#L87">pipe/index.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/pipe/index.ts#L87">index.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +150,7 @@ expect(result).toBe(<span class="hljs-built_in">String</span>(product(sum(<span 
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PipeNode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/pipenode.html" class="tsd-signature-type">PipeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>First node of the pipeline</p>
 						</li>
 					</ul>
@@ -162,13 +159,13 @@ expect(result).toBe(<span class="hljs-built_in">String</span>(product(sum(<span 
 					<a name="pipe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> pipe</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">pipe&lt;Args, Return&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PipeNode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;Args, Return&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/pipenode.html" class="tsd-signature-type">PipeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/pipe/index.ts#L138">pipe/index.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/pipe/index.ts#L138">index.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -219,7 +216,7 @@ expect(pipeline(<span class="hljs-number">2</span>, <span class="hljs-number">-3
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Return</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>First function in the pipeline</p>
@@ -227,7 +224,7 @@ expect(pipeline(<span class="hljs-number">2</span>, <span class="hljs-number">-3
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Return</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -245,112 +242,8 @@ expect(pipeline(<span class="hljs-number">2</span>, <span class="hljs-number">-3
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PipeNode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/pipenode.html" class="tsd-signature-type">PipeNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Args</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Return</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>First node of the pipeline</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
-					<a name="tap" class="tsd-anchor"></a>
-					<h3>tap</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">tap&lt;Value&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span>, <span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><a href="interfaces/sideeffect.html" class="tsd-signature-type">SideEffect</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/tap/index.ts#L30">tap/index.ts:30</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Insert a side-effect into function pipeline</p>
-								</div>
-								<p><strong>Example:</strong></p>
-								<pre><code class="language-typescript"><span class="hljs-keyword">const</span> result = pass(value)
-  .to(tap, <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'begin'</span>, value))
-  .to(inc)
-  .to(tap, <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'after inc'</span>, value))
-  .to(double)
-  .to(tap, <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'after double'</span>, value))
-  .to(square)
-  .to(tap, <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'after square'</span>, value))
-  .get()</code></pre>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>Value</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">Value</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Value from pipeline</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <a href="interfaces/sideeffect.html" class="tsd-signature-type">SideEffect</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Side effect functions</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Value</span></h4>
-							<p><code>value</code></p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
-					<a name="tapper" class="tsd-anchor"></a>
-					<h3>tapper</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">tapper&lt;Value&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><a href="interfaces/sideeffect.html" class="tsd-signature-type">SideEffect</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/tapper.html" class="tsd-signature-type">Tapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/tap/index.ts#L66">tap/index.ts:66</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Insert a side-effect into function pipeline.
-										This is used in situation where <code>tap</code> is not suited,
-									such as <code>map</code></p>
-								</div>
-								<p><strong>Example:</strong></p>
-								<pre><code class="language-typescript"><span class="hljs-keyword">const</span> myResult = pass(result)
-  .to(tap, <span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'result before onOk/onErr'</span>, result))
-  .to(map, tapper(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'value before onOk'</span>, value)))
-  .to(mapErr, tapper(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error before onErr'</span>, error)))
-  .to(map, onOk)
-  .to(map, tapper(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'value after onOk'</span>, value)))
-  .to(mapErr, onErr)
-  .to(mapErr, tapper(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error after onErr'</span>, error)))
-  .get()</code></pre>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>Value</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <a href="interfaces/sideeffect.html" class="tsd-signature-type">SideEffect</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Side effect functions</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/tapper.html" class="tsd-signature-type">Tapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A side-effect function that can be inserted into a pipeline</p>
 						</li>
 					</ul>
 				</section>
@@ -366,23 +259,14 @@ expect(pipeline(<span class="hljs-number">2</span>, <span class="hljs-number">-3
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-						<a href="interfaces/sideeffect.html" class="tsd-kind-icon">Side<wbr>Effect</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
-						<a href="interfaces/tapper.html" class="tsd-kind-icon">Tapper</a>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/pipenode.html" class="tsd-kind-icon">Pipe<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#pass" class="tsd-kind-icon">pass</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#pipe" class="tsd-kind-icon">pipe</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="globals.html#tap" class="tsd-kind-icon">tap</a>
-					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<a href="globals.html#tapper" class="tsd-kind-icon">tapper</a>
 					</li>
 				</ul>
 			</nav>

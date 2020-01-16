@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @tsfun/function — Reference</h1>
+			<h1>@tsfun/function — Reference</h1>
 		</div>
 	</div>
 </header>
@@ -113,10 +113,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="curriable" class="tsd-anchor"></a>
 					<h3>Curriable</h3>
-					<div class="tsd-signature tsd-kind-icon">Curriable&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Curriable&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L1">curry.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L1">curry.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -135,7 +135,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -159,10 +159,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="curried" class="tsd-anchor"></a>
 					<h3>Curried</h3>
-					<div class="tsd-signature tsd-kind-icon">Curried&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Curried&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L2">curry.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L2">curry.ts:2</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -181,8 +181,8 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -192,10 +192,10 @@
 												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>xs: <span class="tsd-signature-type">Xs</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h4>
 										<ul class="tsd-parameters">
 											<li class="tsd-parameter-siganture">
-												<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<ul class="tsd-signatures tsd-kind-type-literal">
 													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 												</ul>
 												<ul class="tsd-descriptions">
@@ -220,10 +220,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="uncurriable" class="tsd-anchor"></a>
 					<h3>Uncurriable</h3>
-					<div class="tsd-signature tsd-kind-icon">Uncurriable&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Uncurriable&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L3">curry.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L3">curry.ts:3</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -242,8 +242,8 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -253,10 +253,10 @@
 												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>xs: <span class="tsd-signature-type">Xs</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h4>
 										<ul class="tsd-parameters">
 											<li class="tsd-parameter-siganture">
-												<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<ul class="tsd-signatures tsd-kind-type-literal">
 													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 												</ul>
 												<ul class="tsd-descriptions">
@@ -281,10 +281,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 					<a name="uncurried" class="tsd-anchor"></a>
 					<h3>Uncurried</h3>
-					<div class="tsd-signature tsd-kind-icon">Uncurried&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">Uncurried&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L4">curry.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L4">curry.ts:4</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -303,7 +303,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -330,10 +330,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="applyiter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> apply<wbr>Iter</h3>
-					<div class="tsd-signature tsd-kind-icon">apply<wbr>Iter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;apply as any</span></div>
+					<div class="tsd-signature tsd-kind-icon">apply<wbr>Iter<span class="tsd-signature-symbol">:</span> &lt;X, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol"> = apply as any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/apply.ts#L18">apply.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/apply.ts#L18">apply.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -356,8 +356,8 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon">&lt;X, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">&lt;X, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -373,10 +373,10 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>fn: <span class="tsd-signature-type">function</span></h5>
+												<h5>fn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 												<ul class="tsd-parameters">
 													<li class="tsd-parameter-siganture">
-														<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+														<ul class="tsd-signatures tsd-kind-type-literal">
 															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 														</ul>
 														<ul class="tsd-descriptions">
@@ -407,10 +407,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-external">
 					<a name="partialtailiter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> partial<wbr>Tail<wbr>Iter</h3>
-					<div class="tsd-signature tsd-kind-icon">partial<wbr>Tail<wbr>Iter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;partialTail as any</span></div>
+					<div class="tsd-signature tsd-kind-icon">partial<wbr>Tail<wbr>Iter<span class="tsd-signature-symbol">:</span> &lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol"> = partialTail as any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/partial.ts#L29">partial.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/partial.ts#L29">partial.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -433,8 +433,8 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon">&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -453,10 +453,10 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>fn: <span class="tsd-signature-type">function</span></h5>
+												<h5>fn: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 												<ul class="tsd-parameters">
 													<li class="tsd-parameter-siganture">
-														<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+														<ul class="tsd-signatures tsd-kind-type-literal">
 															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 														</ul>
 														<ul class="tsd-descriptions">
@@ -480,10 +480,10 @@
 												<h5>xs: <span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">function</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h4>
 										<ul class="tsd-parameters">
 											<li class="tsd-parameter-siganture">
-												<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<ul class="tsd-signatures tsd-kind-type-literal">
 													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 												</ul>
 												<ul class="tsd-descriptions">
@@ -512,13 +512,13 @@
 					<a name="apply" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> apply</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">apply&lt;Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply&lt;Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/apply.ts#L7">apply.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/apply.ts#L7">apply.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -529,7 +529,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof any[]</span></h4>
+									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 								</li>
 								<li>
 									<h4>Y</h4>
@@ -538,7 +538,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to be applied</p>
@@ -546,7 +546,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -581,13 +581,13 @@
 					<a name="call0" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> call0</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">call0&lt;Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">call0&lt;Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/call.ts#L6">call.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/call.ts#L6">call.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -604,7 +604,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to call</p>
@@ -612,7 +612,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -633,13 +633,13 @@
 					<a name="call1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> call1</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">call1&lt;X, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">call1&lt;X, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/call.ts#L14">call.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/call.ts#L14">call.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -659,7 +659,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to call</p>
@@ -667,7 +667,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -702,13 +702,13 @@
 					<a name="call2" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> call2</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">call2&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">call2&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/call.ts#L26">call.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/call.ts#L26">call.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -731,7 +731,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to call</p>
@@ -739,7 +739,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -785,13 +785,13 @@
 					<a name="call3" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> call3</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">call3&lt;X0, X1, X2, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">call3&lt;X0, X1, X2, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/call.ts#L40">call.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/call.ts#L40">call.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -817,7 +817,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to call</p>
@@ -825,7 +825,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, x2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -882,13 +882,13 @@
 					<a name="callxs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> call<wbr>Xs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">call<wbr>Xs&lt;Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
+						<li class="tsd-signature tsd-kind-icon">call<wbr>Xs&lt;Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/call.ts#L53">call.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/call.ts#L53">call.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -908,7 +908,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to call</p>
@@ -916,7 +916,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -951,13 +951,13 @@
 					<a name="compose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compose</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">compose&lt;X, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;X, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/compose.ts#L7">compose.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/compose.ts#L7">compose.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -980,7 +980,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>f: <span class="tsd-signature-type">function</span></h5>
+									<h5>f: <span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Outer unary function</p>
@@ -988,7 +988,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Z</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1006,7 +1006,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>g: <span class="tsd-signature-type">function</span></h5>
+									<h5>g: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Inner unary function</p>
@@ -1014,7 +1014,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1041,13 +1041,13 @@
 					<a name="composeright" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compose<wbr>Right</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">compose<wbr>Right&lt;X, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose<wbr>Right&lt;X, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/compose.ts#L29">compose.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/compose.ts#L29">compose.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1070,7 +1070,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>f: <span class="tsd-signature-type">function</span></h5>
+									<h5>f: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Inner unary function</p>
@@ -1078,7 +1078,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1096,7 +1096,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>g: <span class="tsd-signature-type">function</span></h5>
+									<h5>g: <span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Outer unary function</p>
@@ -1104,7 +1104,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Z</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1131,13 +1131,13 @@
 					<a name="composexs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compose<wbr>Xs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">compose<wbr>Xs&lt;Xs, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose<wbr>Xs&lt;Xs, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/compose.ts#L18">compose.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/compose.ts#L18">compose.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1160,7 +1160,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>f: <span class="tsd-signature-type">function</span></h5>
+									<h5>f: <span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Outer unary function</p>
@@ -1168,7 +1168,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Z</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1186,7 +1186,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>g: <span class="tsd-signature-type">function</span></h5>
+									<h5>g: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Inner n-ary function</p>
@@ -1194,7 +1194,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1221,13 +1221,13 @@
 					<a name="composexsright" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compose<wbr>XsRight</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">compose<wbr>XsRight&lt;Xs, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose<wbr>XsRight&lt;Xs, Y, Z&gt;<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/compose.ts#L40">compose.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/compose.ts#L40">compose.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1250,7 +1250,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>f: <span class="tsd-signature-type">function</span></h5>
+									<h5>f: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Inner n-ary function</p>
@@ -1258,7 +1258,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1276,7 +1276,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5>g: <span class="tsd-signature-type">function</span></h5>
+									<h5>g: <span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Z</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Outer unary function</p>
@@ -1284,7 +1284,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Z</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1317,7 +1317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L11">curry.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L11">curry.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1357,13 +1357,13 @@
 					<a name="flip" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> flip</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">flip&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">flip&lt;X0, X1, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/arity.ts#L6">arity.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/arity.ts#L6">arity.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,7 +1386,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to swap arguments</p>
@@ -1394,7 +1394,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1424,13 +1424,13 @@
 					<a name="flipxs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> flip<wbr>Xs</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">flip<wbr>Xs&lt;X0, X1, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">flip<wbr>Xs&lt;X0, X1, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/arity.ts#L15">arity.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/arity.ts#L15">arity.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1456,7 +1456,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to swap arguments</p>
@@ -1464,7 +1464,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X0</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X1</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1497,13 +1497,13 @@
 					<a name="nary" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> n<wbr>Ary</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">n<wbr>Ary&lt;X&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">n<wbr>Ary&lt;X&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/arity.ts#L26">arity.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/arity.ts#L26">arity.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1521,7 +1521,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">X</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to apply</p>
@@ -1529,7 +1529,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1559,13 +1559,13 @@
 					<a name="naryright" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> n<wbr>Ary<wbr>Right</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">n<wbr>Ary<wbr>Right&lt;X&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">n<wbr>Ary<wbr>Right&lt;X&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/arity.ts#L36">arity.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/arity.ts#L36">arity.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1583,7 +1583,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">X</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to apply</p>
@@ -1591,7 +1591,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, x1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1621,13 +1621,13 @@
 					<a name="partial" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> partial</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">partial&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">partial&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/partial.ts#L7">partial.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/partial.ts#L7">partial.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1650,7 +1650,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to apply</p>
@@ -1658,7 +1658,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1696,13 +1696,13 @@
 					<a name="partialtail" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> partial<wbr>Tail</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">partial<wbr>Tail&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">partial<wbr>Tail&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/partial.ts#L18">partial.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/partial.ts#L18">partial.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1716,7 +1716,7 @@
 									<h4>X</h4>
 								</li>
 								<li>
-									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof any[]</span></h4>
+									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 								</li>
 								<li>
 									<h4>Y</h4>
@@ -1725,7 +1725,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to apply</p>
@@ -1733,7 +1733,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1771,13 +1771,13 @@
 					<a name="partialtailspread" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> partial<wbr>Tail<wbr>Spread</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">partial<wbr>Tail<wbr>Spread&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">partial<wbr>Tail<wbr>Spread&lt;X, Xs, Y&gt;<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/partial.ts#L42">partial.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/partial.ts#L42">partial.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1791,7 +1791,7 @@
 									<h4>X</h4>
 								</li>
 								<li>
-									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof any[]</span></h4>
+									<h4>Xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 								</li>
 								<li>
 									<h4>Y</h4>
@@ -1800,7 +1800,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Y</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Function to apply</p>
@@ -1808,7 +1808,7 @@
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">X</span>, <span class="tsd-signature-symbol">...</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Xs</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Y</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1852,7 +1852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/5ef83fe/packages/function/curry.ts#L21">curry.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/87fbf23/packages/function/curry.ts#L21">curry.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
