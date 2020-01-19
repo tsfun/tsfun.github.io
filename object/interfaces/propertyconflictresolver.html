@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ErrorType | @tsfun/object — Reference</title>
+	<title>PropertyConflictResolver | @tsfun/object — Reference</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,44 +54,61 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/deepmergewithoutcollision.html">deepMergeWithoutCollision</a>
-				</li>
-				<li>
-					<a href="deepmergewithoutcollision.errortype.html">ErrorType</a>
+					<a href="propertyconflictresolver.html">PropertyConflictResolver</a>
 				</li>
 			</ul>
-			<h1>Enumeration ErrorType</h1>
+			<h1>Interface PropertyConflictResolver</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external">
-							<h3>Enumeration members</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="deepmergewithoutcollision.errortype.html#propertycollision" class="tsd-kind-icon">Property<wbr>Collision</a></li>
-							</ul>
-						</section>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Decides which property should make it to the merged object</p>
 					</div>
-				</section>
+				</div>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-					<a name="propertycollision" class="tsd-anchor"></a>
-					<h3>Property<wbr>Collision</h3>
-					<div class="tsd-signature tsd-kind-icon">Property<wbr>Collision<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/eeddeeb/packages/object/deep-merge.ts#L93">deep-merge.ts:93</a></li>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">PropertyConflictResolver</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/propertypreference.html" class="tsd-signature-type">PropertyPreference</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L44">deep-merge.ts:44</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Decides which property should make it to the merged object</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>values: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Pair of conflicting properties</p>
+								</div>
+							</li>
 						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <a href="../enums/propertypreference.html" class="tsd-signature-type">PropertyPreference</a></h4>
+						<p>Property choice</p>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -100,37 +117,17 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class="current tsd-kind-module tsd-has-type-parameter tsd-is-external">
-						<a href="../modules/deepmergewithoutcollision.html">deep<wbr>Merge<wbr>Without<wbr>Collision</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-module tsd-is-external">
-						<a href="deepmergewithoutcollision.errortype.html" class="tsd-kind-icon">Error<wbr>Type</a>
-						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
-								<a href="deepmergewithoutcollision.errortype.html#propertycollision" class="tsd-kind-icon">Property<wbr>Collision</a>
-							</li>
-						</ul>
+					<li class="current tsd-kind-interface tsd-is-external">
+						<a href="propertyconflictresolver.html" class="tsd-kind-icon">Property<wbr>Conflict<wbr>Resolver</a>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="../interfaces/deepmergewithoutcollision.errorprocessor.html" class="tsd-kind-icon">Error<wbr>Processor</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
-						<a href="../interfaces/deepmergewithoutcollision.propertycollision.html" class="tsd-kind-icon">Property<wbr>Collision</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-external">
-						<a href="../modules/deepmergewithoutcollision.html#errorprocessorparam" class="tsd-kind-icon">Error<wbr>Processor<wbr>Param</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
