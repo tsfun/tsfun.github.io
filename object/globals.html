@@ -85,6 +85,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#addproperty" class="tsd-kind-icon">Add<wbr>Property</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#deeppartialnonarray" class="tsd-kind-icon">Deep<wbr>Partial<wbr>Non<wbr>Array</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#errorprocessorparam" class="tsd-kind-icon">Error<wbr>Processor<wbr>Param</a></li>
 								<li class="tsd-kind-type-alias tsd-is-external"><a href="globals.html#key" class="tsd-kind-icon">Key</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-external"><a href="globals.html#maybeparam" class="tsd-kind-icon">Maybe<wbr>Param</a></li>
@@ -112,6 +113,7 @@
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#bindcontext" class="tsd-kind-icon">bind<wbr>Context</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#callmethod" class="tsd-kind-icon">call<wbr>Method</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#deepmergeoverwrite" class="tsd-kind-icon">deep<wbr>Merge<wbr>Overwrite</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#deepmergepartial" class="tsd-kind-icon">deep<wbr>Merge<wbr>Partial</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#deepmergewithpreference" class="tsd-kind-icon">deep<wbr>Merge<wbr>With<wbr>Preference</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-external"><a href="globals.html#deepmergewithoutcollision" class="tsd-kind-icon">deep<wbr>Merge<wbr>Without<wbr>Collision</a></li>
 								<li class="tsd-kind-function tsd-is-external"><a href="globals.html#deletepropertypath" class="tsd-kind-icon">delete<wbr>Property<wbr>Path</a></li>
@@ -144,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">Add<wbr>Property&lt;Proto, Key, Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L41">utils/types.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L51">utils/types.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,13 +167,34 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+					<a name="deeppartialnonarray" class="tsd-anchor"></a>
+					<h3>Deep<wbr>Partial<wbr>Non<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">Deep<wbr>Partial<wbr>Non<wbr>Array&lt;Object&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L30">utils/types.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Make all properties in a dict optional</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Object</h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-external">
 					<a name="errorprocessorparam" class="tsd-anchor"></a>
 					<h3>Error<wbr>Processor<wbr>Param</h3>
 					<div class="tsd-signature tsd-kind-icon">Error<wbr>Processor<wbr>Param<span class="tsd-signature-symbol">:</span> <a href="interfaces/propertycollision.html" class="tsd-signature-type">PropertyCollision</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L141">deep-merge.ts:141</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L161">deep-merge.ts:161</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/property-path.ts#L1">property-path.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/property-path.ts#L1">property-path.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Param&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Fn</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">Parameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Fn</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L54">utils/types.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L64">utils/types.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -217,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">Maybe<wbr>Return&lt;Fn&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Fn</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Fn</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L59">utils/types.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L69">utils/types.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">Null<wbr>Object&lt;X&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">X</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">__type</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">X</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L6">utils/types.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L6">utils/types.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,7 +282,7 @@
 					<div class="tsd-signature tsd-kind-icon">Object<wbr>Extends&lt;Proto, Properties&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Assign</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#nullobject" class="tsd-signature-type">NullObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Proto</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="globals.html#nullobject" class="tsd-signature-type">NullObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Properties</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L30">utils/types.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L40">utils/types.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,7 +306,7 @@
 					<div class="tsd-signature tsd-kind-icon">Properties&lt;Type&gt;<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L18">utils/types.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L18">utils/types.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -309,7 +332,7 @@
 					<div class="tsd-signature tsd-kind-icon">Simple<wbr>Deep<wbr>Merge&lt;A, B&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="globals.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L25">utils/types.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L25">utils/types.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -333,7 +356,7 @@
 					<div class="tsd-signature tsd-kind-icon">Single<wbr>Dict&lt;Key, Value&gt;<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/types.ts#L11">utils/types.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/types.ts#L11">utils/types.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -365,7 +388,7 @@
 					<div class="tsd-signature tsd-kind-icon">proto<wbr>Bind<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bind</span><span class="tsd-signature-symbol"> = Function.prototype.bind</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/bind.ts#L1">utils/bind.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/bind.ts#L1">utils/bind.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -382,7 +405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L81">deep-merge.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L118">deep-merge.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -405,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L66">deep-merge.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L55">deep-merge.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="enums/propertypreference.html" class="tsd-signature-type">PropertyPreference</a></h4>
@@ -422,7 +445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/add-property.ts#L12">add-property.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/add-property.ts#L12">add-property.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -483,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L36">call-method.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L36">call-method.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/utils/bind.ts#L2">utils/bind.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/utils/bind.ts#L2">utils/bind.ts:2</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -577,7 +600,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L53">call-method.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L53">call-method.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -639,7 +662,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L77">deep-merge.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L51">deep-merge.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -675,6 +698,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
+					<a name="deepmergepartial" class="tsd-anchor"></a>
+					<h3>deep<wbr>Merge<wbr>Partial</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Merge<wbr>Partial&lt;Object&gt;<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeepPartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span>, resolveConflict<span class="tsd-signature-symbol">: </span><a href="interfaces/propertyconflictresolver.html" class="tsd-signature-type">PropertyConflictResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L64">deep-merge.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Merge an object and a partial object of the same interface</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>Object</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <span class="tsd-signature-type">Object</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Object to merge</p>
+									</div>
+								</li>
+								<li>
+									<h5>right: <span class="tsd-signature-type">DeepPartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Partial object to merge</p>
+									</div>
+								</li>
+								<li>
+									<h5>resolveConflict: <a href="interfaces/propertyconflictresolver.html" class="tsd-signature-type">PropertyConflictResolver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Function that resolves property conflict</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
+							<p>Result of the merge</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-external">
 					<a name="deepmergewithpreference" class="tsd-anchor"></a>
 					<h3>deep<wbr>Merge<wbr>With<wbr>Preference</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
@@ -684,7 +757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L13">deep-merge.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L14">deep-merge.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -728,13 +801,13 @@
 					<a name="deepmergewithoutcollision" class="tsd-anchor"></a>
 					<h3>deep<wbr>Merge<wbr>Without<wbr>Collision</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Merge<wbr>Without<wbr>Collision&lt;Left, Right&gt;<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Left</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Right</span>, onerror<span class="tsd-signature-symbol">?: </span><a href="interfaces/errorprocessor.html" class="tsd-signature-type">ErrorProcessor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="globals.html#simpledeepmerge" class="tsd-signature-type">SimpleDeepMerge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Left</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Right</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Merge<wbr>Without<wbr>Collision&lt;Left, Right&gt;<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Left</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Right</span>, onerror<span class="tsd-signature-symbol">?: </span><a href="interfaces/errorprocessor.html" class="tsd-signature-type">ErrorProcessor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeepMergeWithoutCollision</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Left</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Right</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L95">deep-merge.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L86">deep-merge.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -773,7 +846,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="globals.html#simpledeepmerge" class="tsd-signature-type">SimpleDeepMerge</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Left</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Right</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">DeepMergeWithoutCollision</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Left</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Right</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A merged object of <code>a</code> and <code>b</code></p>
 						</li>
 					</ul>
@@ -788,7 +861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/property-path.ts#L26">property-path.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/property-path.ts#L26">property-path.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -814,7 +887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L69">call-method.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L69">call-method.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -868,7 +941,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/get-property.ts#L19">get-property.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/get-property.ts#L19">get-property.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -919,7 +992,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/property-path.ts#L5">property-path.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/property-path.ts#L5">property-path.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -946,7 +1019,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/deep-merge.ts#L3">deep-merge.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/deep-merge.ts#L4">deep-merge.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -960,7 +1033,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/property-path.ts#L3">property-path.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/property-path.ts#L3">property-path.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -983,7 +1056,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L10">call-method.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L10">call-method.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1021,7 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L22">call-method.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L22">call-method.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1059,7 +1132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/call-method.ts#L83">call-method.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/call-method.ts#L83">call-method.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1099,7 +1172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/object-extends.ts#L10">object-extends.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/object-extends.ts#L10">object-extends.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1146,7 +1219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/omit.ts#L7">omit.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/omit.ts#L7">omit.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1193,7 +1266,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/omit.ts#L26">omit.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/omit.ts#L26">omit.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1240,7 +1313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/pick.ts#L7">pick.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/pick.ts#L7">pick.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1287,7 +1360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/pick.ts#L26">pick.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/pick.ts#L26">pick.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1338,7 +1411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/get-property.ts#L38">get-property.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/get-property.ts#L38">get-property.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1378,7 +1451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/get-property.ts#L8">get-property.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/get-property.ts#L8">get-property.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1418,7 +1491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/set-property.ts#L11">set-property.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/set-property.ts#L11">set-property.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1479,7 +1552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/c4b6fa6/packages/object/property-path.ts#L16">property-path.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/tsfun/tsfun/blob/199f191/packages/object/property-path.ts#L16">property-path.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1531,6 +1604,9 @@
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#addproperty" class="tsd-kind-icon">Add<wbr>Property</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#deeppartialnonarray" class="tsd-kind-icon">Deep<wbr>Partial<wbr>Non<wbr>Array</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-is-external">
 						<a href="globals.html#errorprocessorparam" class="tsd-kind-icon">Error<wbr>Processor<wbr>Param</a>
 					</li>
@@ -1581,6 +1657,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#deepmergeoverwrite" class="tsd-kind-icon">deep<wbr>Merge<wbr>Overwrite</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
+						<a href="globals.html#deepmergepartial" class="tsd-kind-icon">deep<wbr>Merge<wbr>Partial</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-external">
 						<a href="globals.html#deepmergewithpreference" class="tsd-kind-icon">deep<wbr>Merge<wbr>With<wbr>Preference</a>
